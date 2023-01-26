@@ -3,7 +3,7 @@
 Upload, download, or list files/folders through Github Actions.
 
 ```
-- uses: keithweaver/aws-s3-github-action@v1.0.0
+- uses: konnected-io/aws-s3-github-action@master
   with:
     command: cp
     source: ./local_file.txt
@@ -103,7 +103,7 @@ Solution is [here](https://github.com/aws/aws-cli/issues/602#issuecomment-603877
 You need to a recursive flag for the `cp`. Looks like:
 
 ```
-- uses: keithweaver/aws-s3-github-action@v1.0.0
+- uses: konnected-io/aws-s3-github-action@master
   name: Copy Folder
   with:
     command: cp
